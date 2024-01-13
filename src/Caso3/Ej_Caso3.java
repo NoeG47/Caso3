@@ -65,6 +65,14 @@ public class Ej_Caso3 {
 		System.out.println("El volumen del cubo es: " + calcularVolumenCuboN(ladoCubo));
 		System.out.println("\n");
 
+		// Alumno2:
+		// CASO ÁREA CUBO L
+		System.out.println("CASO ÁREA CUBO");
+		double longitudC = 0;
+		System.out.print("Ingrese la longitud del lado del cubo: ");
+		longitudC = in.nextDouble();
+		System.out.println("El área total del cubo es: " + calcularAreaTotalL(longitudC));
+		System.out.println("\n");
 	}
 
 	// CASO TRIANGULO N
@@ -101,8 +109,15 @@ public class Ej_Caso3 {
 		return longitud * ancho;
 	}
 
+
 	// CASO VOLUMEN CUBO N
 	public static double calcularVolumenCuboN(double ladoCubo) {
 		return ladoCubo * ladoCubo * ladoCubo;
+
+	// CASO CUBO L
+	public static double calcularAreaTotalL(double longitudC) {
+
+		return 6 * (longitudC * longitudC);
+
 	}
 }
