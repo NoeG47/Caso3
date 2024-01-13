@@ -56,6 +56,15 @@ public class Ej_Caso3 {
 		System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud, ancho));
 		System.out.println("\n");
 
+		// Alumno1:
+		// CASO VOLUMEN CUBO N
+		System.out.println("CASO CUBO");
+		double ladoCubo = 0;
+		System.out.println("Introduce el lado del cubo: ");
+		ladoCubo = in.nextDouble();
+		System.out.println("El volumen del cubo es: " + calcularVolumenCuboN(ladoCubo));
+		System.out.println("\n");
+
 		// Alumno2:
 		// CASO ÁREA CUBO L
 		System.out.println("CASO ÁREA CUBO");
@@ -100,9 +109,15 @@ public class Ej_Caso3 {
 		return longitud * ancho;
 	}
 
+
+	// CASO VOLUMEN CUBO N
+	public static double calcularVolumenCuboN(double ladoCubo) {
+		return ladoCubo * ladoCubo * ladoCubo;
+
 	// CASO CUBO L
 	public static double calcularAreaTotalL(double longitudC) {
 
 		return 6 * (longitudC * longitudC);
+
 	}
 }
