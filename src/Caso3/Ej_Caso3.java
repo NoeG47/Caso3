@@ -6,7 +6,7 @@ public class Ej_Caso3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Alumno1:
+		// Alumno1:
 		Scanner in = new Scanner(System.in);
 		// CASO TRIÁNGULO N
 		double base = 0;
@@ -18,9 +18,9 @@ public class Ej_Caso3 {
 		base = in.nextDouble();
 		System.out.println("El área del triángulo es: " + calcularAreaTriangulo(base, altura));
 		System.out.println("\n");
-		
-		//Alumno2:
-		//CASO CIRCUNFERENCIA L
+
+		// Alumno2:
+		// CASO CIRCUNFERENCIA L
 		System.out.println("CASO CIRCUNFERENCIA");
 		double radio = 0;
 		System.out.println("Introduce el radio: ");
@@ -29,25 +29,51 @@ public class Ej_Caso3 {
 		System.out.println("El área de la circunferencia es: " + calcularAreaCircunferencia(radio));
 		System.out.println("El perímetro de la circunferencia es: " + calcularPerimetroCircunferencia(radio));
 		System.out.println("\n");
+
+		// Alumno1:
+		// CASO CILINDRO :) N
+		System.out.println("CASO CILINDRO");
+		double radioCilindro = 0;
+		double alturaCilindro = 0;
+		// Calcular el área del cilindro
+		System.out.println("Introduce el radio del cilindro: ");
+		radioCilindro = in.nextDouble();
+		System.out.println("Introduce la altura del cilindro: ");
+		alturaCilindro = in.nextDouble();
+		System.out.println("El área de la cilindro es: " + calcularAreaCilindro(radioCilindro, alturaCilindro));
+		System.out.println("\n");
 		
-		//Alumno1:
-		//
-		
+		//Alumno2: 
+
 	}
-	
-	//CASO TRIANGULO N
+
+	// CASO TRIANGULO N
 	public static double calcularAreaTriangulo(double base, double altura) {
 		return (base * altura) / 2;
 	}
-	//CASO CIRCUNFERENCIA L
+
+	// CASO CIRCUNFERENCIA L
 	public static double calcularAreaCircunferencia(double radio) {
 		return 3.14 * radio * radio;
 
 	}
+
 	public static double calcularPerimetroCircunferencia(double radio) {
 		return 2 * 3.14 * radio;
 	}
-	//
+	// CASO CILINDRO N
+	public static double calcularAreaCilindro(double radioCilindro, double alturaCilindro) {
+		double pi = 3.14;
 
+		double areaBase = pi * radioCilindro * radioCilindro;
+
+		double areaLateral = 2 * pi * radioCilindro * alturaCilindro;
+
+		double areaTotal = 2 * areaBase + areaLateral;
+
+		return areaTotal;
+
+	}
+	//
 
 }
