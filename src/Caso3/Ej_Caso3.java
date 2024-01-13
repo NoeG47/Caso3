@@ -44,6 +44,17 @@ public class Ej_Caso3 {
 		System.out.println("\n");
 		
 		//Alumno2: 
+		//CASO RECTÁNGULO L 
+		System.out.println("CASO RECTÁNGULO");
+		double longitud = 0;
+		double ancho = 0;
+		// Calcular el área de un rectángulo
+		System.out.print("Ingrese la longitud del rectángulo: ");
+        longitud = in.nextDouble();
+        System.out.print("Ingrese el ancho del rectángulo: ");
+        ancho = in.nextDouble();
+        System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud,ancho));
+        System.out.println("\n");
 
 	}
 
@@ -74,6 +85,9 @@ public class Ej_Caso3 {
 		return areaTotal;
 
 	}
-	//
+	//CASO RECTÁNGULO L
+	public static double calcularAreaRectanguloL(double longitud, double ancho) {
+		return longitud * ancho;
+	}
 
 }
