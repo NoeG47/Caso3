@@ -113,7 +113,7 @@ public class Ej_Caso3 {
 	// CASO VOLUMEN CUBO N
 	public static double calcularVolumenCuboN(double ladoCubo) {
 		return ladoCubo * ladoCubo * ladoCubo;
-
+	}
 	// CASO CUBO L
 	public static double calcularAreaTotalL(double longitudC) {
 
