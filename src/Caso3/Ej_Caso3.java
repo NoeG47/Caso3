@@ -42,20 +42,28 @@ public class Ej_Caso3 {
 		alturaCilindro = in.nextDouble();
 		System.out.println("El área de la cilindro es: " + calcularAreaCilindro(radioCilindro, alturaCilindro));
 		System.out.println("\n");
-		
-		//Alumno2: 
-		//CASO RECTÁNGULO L 
+
+		// Alumno2:
+		// CASO RECTÁNGULO L
 		System.out.println("CASO RECTÁNGULO");
 		double longitud = 0;
 		double ancho = 0;
 		// Calcular el área de un rectángulo
 		System.out.print("Ingrese la longitud del rectángulo: ");
-        longitud = in.nextDouble();
-        System.out.print("Ingrese el ancho del rectángulo: ");
-        ancho = in.nextDouble();
-        System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud,ancho));
-        System.out.println("\n");
+		longitud = in.nextDouble();
+		System.out.print("Ingrese el ancho del rectángulo: ");
+		ancho = in.nextDouble();
+		System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud, ancho));
+		System.out.println("\n");
 
+		// Alumno2:
+		// CASO ÁREA CUBO L
+		System.out.println("CASO ÁREA CUBO");
+		double longitudC = 0;
+		System.out.print("Ingrese la longitud del lado del cubo: ");
+		longitudC = in.nextDouble();
+		System.out.println("El área total del cubo es: " + calcularAreaTotalL(longitudC));
+		System.out.println("\n");
 	}
 
 	// CASO TRIANGULO N
@@ -72,6 +80,7 @@ public class Ej_Caso3 {
 	public static double calcularPerimetroCircunferencia(double radio) {
 		return 2 * 3.14 * radio;
 	}
+
 	// CASO CILINDRO N
 	public static double calcularAreaCilindro(double radioCilindro, double alturaCilindro) {
 		double pi = 3.14;
@@ -85,9 +94,15 @@ public class Ej_Caso3 {
 		return areaTotal;
 
 	}
-	//CASO RECTÁNGULO L
+
+	// CASO RECTÁNGULO L
 	public static double calcularAreaRectanguloL(double longitud, double ancho) {
 		return longitud * ancho;
 	}
 
+	// CASO CUBO L
+	public static double calcularAreaTotalL(double longitudC) {
+
+		return 6 * (longitudC * longitudC);
+	}
 }
