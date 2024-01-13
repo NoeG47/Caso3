@@ -20,9 +20,18 @@ public class Ej_Caso3 {
 		System.out.println("\n");
 		
 		//Alumno2:
+		//CASO CIRCUNFERENCIA L
+		System.out.println("CASO CIRCUNFERENCIA");
+		double radio = 0;
+		System.out.println("Introduce el radio: ");
+		radio = in.nextDouble();
+		// Calcular el área y el perímetro
+		System.out.println("El área de la circunferencia es: " + calcularAreaCircunferencia(radio));
+		System.out.println("El perímetro de la circunferencia es: " + calcularPerimetroCircunferencia(radio));
+		System.out.println("\n");
+		
+		//Alumno1:
 		//
-		
-		
 		
 	}
 	
@@ -30,6 +39,15 @@ public class Ej_Caso3 {
 	public static double calcularAreaTriangulo(double base, double altura) {
 		return (base * altura) / 2;
 	}
+	//CASO CIRCUNFERENCIA L
+	public static double calcularAreaCircunferencia(double radio) {
+		return 3.14 * radio * radio;
+
+	}
+	public static double calcularPerimetroCircunferencia(double radio) {
+		return 2 * 3.14 * radio;
+	}
 	//
+
 
 }
